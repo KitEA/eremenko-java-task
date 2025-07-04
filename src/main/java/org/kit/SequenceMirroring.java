@@ -8,7 +8,7 @@ public class SequenceMirroring {
         String sequence = scanner.nextLine();
 
         if (checkIfEven(sequence)) {
-            System.out.println("Odd-length sequence is incorrect by default.");
+            System.out.println("The sequence is incorrect because it's odd-length");
             return;
         }
 

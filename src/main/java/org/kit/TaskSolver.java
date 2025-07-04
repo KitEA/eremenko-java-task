@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static org.kit.ProcessNumberNameArray.solveProcessNumberNameArray;
 import static org.kit.SequenceMirroring.solveSequenceMirroring;
 
-public class Main {
+public class TaskSolver {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose what task you want to solve:");
