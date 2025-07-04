@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    application
 }
 
 group = "org.kit"
@@ -14,6 +15,16 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
+application {
+    mainClass.set("org.kit.TaskSolver")
+}
+
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "org.kit.TaskSolver"
+    }
 }
